@@ -1,0 +1,26 @@
+import copy
+new_lst = [15, 6, 7, 10, 12, 20, 10, 28, 10]
+
+lst = copy.copy(new_lst)
+
+def findMax(lst):
+    max = 0
+    index = 0
+    for idx, i in enumerate(lst):
+        if max < i:
+            max = i
+            index = idx
+         
+    idx = idx-1
+    lst.remove(max)
+    # del lst[idx]
+
+    data = [lst, max]
+    return data
+        
+temp = findMax(lst)
+secondlarge = findMax(temp[0])
+new_lst.remove(secondlarge[1])
+print("New List", new_lst)
+print("2nd Large Element", secondlarge[1])
+
