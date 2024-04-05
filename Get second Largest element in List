@@ -24,3 +24,25 @@ new_lst.remove(secondlarge[1])
 print("New List", new_lst)
 print("2nd Large Element", secondlarge[1])
 
+
+
+# optimisd Solution 
+
+new_lst = [15, 6, 7, 10, 12, 20, 10, 28, 10]
+
+largest = new_lst[0]
+slargest = -1
+
+for i in range(1,len(new_lst)):
+    # check if element is larger than previous number
+    if largest < new_lst[i]:
+        # If True largest number will assign to second largest and new value will assign to largest 
+        slargest = largest
+        largest = new_lst[i]
+        
+    else:
+        if (largest > new_lst[i]) and (new_lst[i] > slargest):
+            # if largest value is greater than curerent value and current value is smaller than current value
+            slargest = new_lst[i]
+    
+    print(i, largest, slargest)
