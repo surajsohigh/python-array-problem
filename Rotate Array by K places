@@ -1,0 +1,55 @@
+
+# Optimised Soln 
+arr = [1,2,3,4,5,6,7]
+d = 3
+
+def rev(arr):
+    end = len(arr)-1
+    start = 0
+    while start < end:
+        arr[start], arr[end] = arr[end], arr[start] 
+        start =+ 1
+        end -= 1
+        
+    # print(new_arr)
+    return arr
+    
+    
+
+arr1 = rev(arr[:d])
+print(arr1)
+arr2 = rev(arr[d:])
+print(arr2)
+arr = arr2 + arr1
+print(arr)
+
+
+
+# # Rotate d place (better soln)
+# for i in range(d):
+#     i=0
+#     j=1
+#     size=len(arr)-1
+    
+#     while j<=size:
+#         arr[i], arr[j] = arr[j], arr[i]
+#         i += 1
+#         j += 1
+        
+# print(arr)
+
+
+
+# # Rotate 1 place 
+
+# i=0
+# j=1
+# size=len(arr)-1
+
+# while j<=size:
+#     arr[i], arr[j] = arr[j], arr[i]
+#     i += 1
+#     j += 1
+    
+# print(arr)
+
