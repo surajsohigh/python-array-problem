@@ -1,0 +1,22 @@
+arr1 = [1, 2, 2, 3, 4, 5]
+arr2 = [1, 1, 2, 4, 6, 7, 8]
+
+i=0;j=0
+inter = []
+
+# Brute Force Method
+# For intersection it is important that num is contain in both arr 
+# so we will run till one of the smallest, after that if any number is greater than aur smaller that another array 
+# than we will skip, Here else condition represent that ele contain in both arr so we can append that in list
+
+while (i < len(arr1)) and (j < len(arr2)):
+    if arr1[i] < arr2[j]:
+        i += 1
+    elif arr1[i] > arr2[j]:
+        j += 1
+    else:
+        inter.append(arr2[j])
+        i +=1
+        j+= 1
+               
+print(inter)
