@@ -1,0 +1,27 @@
+
+# Optimised Method
+arr1 = [0, 1, 0, 0, 2, 2, 3, 0, 1]
+
+dic = {}
+min = -1
+key = -1
+max = 0
+for i in arr1:
+    if i in dic:
+        dic[i] += 1
+    else:
+       dic[i] = 1
+     
+    # to get minimum count key
+    # if dic[i] == 1:
+    #         min = i
+    
+    # 
+    if dic[i] > key:
+            key = dic[i]
+            max = i
+    
+print(dic, max, key)
+
+
+    
