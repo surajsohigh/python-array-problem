@@ -1,0 +1,12 @@
+
+arr = [1, 2, 3, 4, 6]
+
+
+
+# print(14^14)
+for i in range(0, len(arr)):
+    # print(i, arr[i], i+1^arr[i])
+    if (i+1^arr[i]) != 0:
+        print(i+1)
+        # pass
+        
