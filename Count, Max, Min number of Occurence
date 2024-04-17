@@ -12,7 +12,7 @@ for i in arr1:
     else:
        dic[i] = 1
      
-    # to get minimum count key
+    # to get minimum count key element
     # if dic[i] == 1:
     #         min = i
     
