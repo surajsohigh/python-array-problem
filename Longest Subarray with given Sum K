@@ -1,7 +1,7 @@
 def longestSubarrayWithSumK(a: [int], k: int) -> int:
     # Write your code here
     # arr = a
-    # k = 10
+    
     maxi = 0
     for i in range(len(a)):
         sum = 0
