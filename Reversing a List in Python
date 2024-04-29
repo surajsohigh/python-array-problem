@@ -1,7 +1,7 @@
 list = [4, 5, 6, 7, 8, 9]
 
 i = 0
-end = len(list) - 1
+end = len(list)-1
 
 while i < end:
     list[i], list[end] = list[end], list[i]
